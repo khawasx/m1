@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/auth', (req, res) => {
-    res.send('Você logou com o usuário ${req.body.username} e senha ${req.body.password}');
+    res.send(`Você logou com o usuário ${req.body.username} e senha ${req.body.password}`);
 });
 
 app.listen(3000);
